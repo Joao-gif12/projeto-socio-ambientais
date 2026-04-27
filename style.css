@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    height: 100vh;
+    background: linear-gradient(135deg, #4da6ff, #000000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+}
+.container{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 20px;
+    width: 300px;
+    backdrop-filter: blur(10px);
+
+}
+.cartoes{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border:  3px solid #4da6ff;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+.cartoes:hover{
+    transform: scale(1.1);
+}
+h1{
+    margin-bottom: 20px;
+    font-size: 22px;
+}
