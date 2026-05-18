@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+.<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,22 +8,51 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <img src="" alt="" class="cartoes">
-        <h1>EcoAção local</h1>
-        <a href="" class="btn-icon">
-            <img src="" alt="" class="btn-icon">
+    <div class="cachorroloko"> <!-- calculadora-->
+        <input type="text" id="tela">
+        <div class="filhosdeexu">
+            <button onclick="add('1')">1</button>
+            <button onclick="add('2')">2</button>
+            <button onclick="add('3')">3</button>
+            <button onclick="add('+')">+</button>
+
+            <button onclick="add('4')">4</button>
+            <button onclick="add('5')">5</button>
+            <button onclick="add('6')">6</button>
+            <button onclick="add('-')">-</button>
+
+            <button onclick="add('7')">7</button>
+            <button onclick="add('8')">8</button>
+            <button onclick="add('9')">9</button>
+            <button onclick="add('*')">*</button>
+
+            <button onclick="limpar()">C</button>
+            <button onclick="add('0')">0</button>
+            <button onclick="calcular()">=</button>     
+            <button onclick="add('/')">/</button>
+        </div>
+
+    </div>
+    <script>
+        function add(valor) {
+            document.getElementById("tela").value += valor;
+
+        }
+        function calcular() {
+            let resultado = eval(document.getElementById("tela").value);
+            document.getElementById("tela").value = resultado;
+        }
+        function limpar() {
+            document.getElementById("tela").value = "";
+        }
+    </script>
         
    <div>
-    espaco livre
-    <span>Conectando pessoa para resolver problemas ambientais</span>
+
 </div>
 </a>
-<a href="" class="btn">
-    <img src="" alt="btn-icon">
-    <div>
-        Espaco livre
-        <span>espaco livre</span>   
+
+    
     </div>
 </a>
 </div>
